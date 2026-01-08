@@ -1,0 +1,246 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj",
+        "projectName": "AzureOMS.Application",
+        "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj",
+        "packagesPath": "C:\\Users\\riya.sonara\\.nuget\\packages\\",
+        "outputPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\riya.sonara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj": {
+                "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj",
+        "projectName": "AzureOMS.Domain",
+        "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\riya.sonara\\.nuget\\packages\\",
+        "outputPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\riya.sonara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj",
+        "projectName": "AzureOMS.Infrastructure",
+        "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\riya.sonara\\.nuget\\packages\\",
+        "outputPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\riya.sonara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj": {
+                "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj"
+              },
+              "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj": {
+                "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Domain\\AzureOMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@AzureOms.Api_HostAddress = http://localhost:5211
+
+GET {{AzureOms.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\bin\Debug\net8.0\AzureOMS.Domain.deps.json
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\bin\Debug\net8.0\AzureOMS.Domain.dll
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\bin\Debug\net8.0\AzureOMS.Domain.pdb
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.AssemblyInfoInputs.cache
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.AssemblyInfo.cs
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.csproj.CoreCompileInputs.cache
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.dll
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\refint\AzureOMS.Domain.dll
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\AzureOMS.Domain.pdb
+E:\AzureDeployingPracticeProjects\AzureOrderManagementSystem\AzureOrderManagementSystem\AzureOMS.Domain\obj\Debug\net8.0\ref\AzureOMS.Domain.dll

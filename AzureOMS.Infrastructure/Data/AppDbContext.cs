@@ -17,6 +17,10 @@ public class AppDbContext : DbContext
             .HasIndex(u => u.Email)
             .IsUnique();
 
+        modelBuilder.Entity<Order>()
+            .Property(o => o.Amount)
+            .HasPrecision(18, 2);
+
         base.OnModelCreating(modelBuilder);
     }
 }

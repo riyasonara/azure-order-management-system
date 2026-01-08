@@ -22,7 +22,15 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(
-                builder.Configuration.GetConnectionString("DefaultConnection")
+                builder.Configuration.GetConnectionString("DefaultConnection"),
+                sqloptions =>
+                {
+                    sqloptions.EnableRetryOnFailure(
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorNumbersToAdd: null
+                        );
+                }
             ));
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();

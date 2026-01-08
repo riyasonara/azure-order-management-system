@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "wqOmqkixk6geH0DK2TRhjw0Fox/u1MMQlmwygwi7+x4=",
-  "Source": "AzureOms.Api",
-  "BasePath": "_content/AzureOms.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"S9DG9GZVIh1Oq9ex3qMosVpHKo98QzTjfqzMlpkjPGU=","Source":"AzureOms.Api","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

@@ -1,35 +1,39 @@
 ﻿using AzureOMS.Application.Interfaces;
 using AzureOMS.Domain.Entities;
 using AzureOMS.Infrastructure.Auth;
+using AzureOMS.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace AzureOMS.Infrastructure.Services;
 
 public class AuthService : IAuthService
 {
-    private static readonly List<User> Users = [];
+    private readonly AppDbContext _dbContext;
     private readonly JwtTokenGenerator _jwtTokenGenerator;
 
-    public AuthService(JwtTokenGenerator jwtTokenGenerator)
+    public AuthService(AppDbContext context, JwtTokenGenerator jwtTokenGenerator)
     {
+        _dbContext = context;
         _jwtTokenGenerator = jwtTokenGenerator;
     }
 
-    public Task<string> LoginAsync(string email, string password)
+    public async Task<string> LoginAsync(string email, string password)
     {
-        var user = Users.SingleOrDefault(x => x.Email == email);
+        var user = await _dbContext.Users.SingleOrDefaultAsync(x => x.Email == email);
 
         if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
         {
             throw new Exception("Invalid credentials");
         }
 
-        var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Email);
-        return Task.FromResult(token);
+        return _jwtTokenGenerator.GenerateToken(user.Id, user.Email);
     }
 
-    public Task<User> RegisterAsync(string email, string password)
+    public async Task<User> RegisterAsync(string email, string password)
     {
-        if (Users.Any(x => x.Email == email))
+        var userExists = _dbContext.Users.Any(x => x.Email == email);
+
+        if (userExists)
             throw new Exception("User already exists");
 
         var user = new User
@@ -39,7 +43,9 @@ public class AuthService : IAuthService
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(password)
         };
 
-        Users.Add(user);
-        return Task.FromResult(user);
+        _dbContext.Users.Add(user);
+        await _dbContext.SaveChangesAsync();
+
+        return user;
     }
 }

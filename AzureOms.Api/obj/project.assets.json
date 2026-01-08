@@ -4293,23 +4293,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\riya.sonara\\.nuget\\packages\\": {},
+    "C:\\Users\\Riya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOms.Api\\AzureOms.Api.csproj",
+      "projectUniqueName": "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOms.Api\\AzureOms.Api.csproj",
       "projectName": "AzureOms.Api",
-      "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOms.Api\\AzureOms.Api.csproj",
-      "packagesPath": "C:\\Users\\riya.sonara\\.nuget\\packages\\",
-      "outputPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOms.Api\\obj\\",
+      "projectPath": "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOms.Api\\AzureOms.Api.csproj",
+      "packagesPath": "C:\\Users\\Riya\\.nuget\\packages\\",
+      "outputPath": "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOms.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\riya.sonara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Riya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4324,11 +4324,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj": {
-              "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Application\\AzureOMS.Application.csproj"
+            "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOMS.Application\\AzureOMS.Application.csproj": {
+              "projectPath": "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOMS.Application\\AzureOMS.Application.csproj"
             },
-            "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj": {
-              "projectPath": "E:\\AzureDeployingPracticeProjects\\AzureOrderManagementSystem\\AzureOrderManagementSystem\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj"
+            "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj": {
+              "projectPath": "E:\\AzureWithDotnet\\AzureOrderManagementSystem\\azure-order-management-system\\AzureOMS.Infrastructure\\AzureOMS.Infrastructure.csproj"
             }
           }
         }
@@ -4343,7 +4343,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4387,7 +4387,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AzureOMS.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d49f1d97eb36904e4d844180e8bd8c62ebc158f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AzureOMS.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AzureOMS.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

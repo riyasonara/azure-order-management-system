@@ -10,8 +10,4 @@
     <ProjectReference Include="..\AzureOMS.Domain\AzureOMS.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
-
 </Project>

@@ -1,14 +1,13 @@
-﻿namespace AzureOMS.Domain.Entities;
+﻿using AzureOMS.Domain.Common;
+using AzureOMS.Domain.Enums;
 
-public class Order
+namespace AzureOMS.Domain.Entities;
+
+public class Order : BaseEntity
 {
-    public Guid Id { get; set; }
-
     public Guid UserId { get; set; }
 
     public decimal Amount { get; set; }
 
-    public string Status { get; set; } = "Pending";
-
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public OrderStatus Status { get; set; } = OrderStatus.Pending;
 }

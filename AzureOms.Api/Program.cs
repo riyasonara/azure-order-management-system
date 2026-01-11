@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Azure.Identity;
 
 namespace AzureOms.Api;
 
@@ -18,23 +19,23 @@ public class Program
         // Add services to the container.
         builder.Services.AddSingleton<JwtTokenGenerator>();
         builder.Services.AddScoped<IAuthService, AuthService>();
+        builder.Services.AddScoped<IOrderService, OrderService>();
 
         builder.Services.AddControllers();
-        builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(
-                builder.Configuration.GetConnectionString("DefaultConnection"),
-                sqloptions =>
-                {
-                    sqloptions.EnableRetryOnFailure(
-                        maxRetryCount: 5,
-                        maxRetryDelay: TimeSpan.FromSeconds(30),
-                        errorNumbersToAdd: null
-                        );
-                }
-            ));
+
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        var keyVaultUri = builder.Configuration["AzureKeyVault:VaultUri"];
+
+        if (!string.IsNullOrWhiteSpace(keyVaultUri))
+        {
+            builder.Configuration.AddAzureKeyVault(
+                new Uri(keyVaultUri),
+                new DefaultAzureCredential()
+            );
+        }
 
         var jwtsettings = builder.Configuration.GetSection("Jwt");
 
@@ -57,14 +58,30 @@ public class Program
             };
         });
 
+        if (string.IsNullOrEmpty(jwtsettings["Key"]))
+        {
+            throw new Exception("JWT Key is missing. Check Azure Key Vault configuration.");
+        }
+
+        builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlServer(
+                builder.Configuration.GetConnectionString("DefaultConnection"),
+                sqloptions =>
+                {
+                    sqloptions.EnableRetryOnFailure(
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorNumbersToAdd: null
+                        );
+                }
+            ));
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseHttpsRedirection();
 

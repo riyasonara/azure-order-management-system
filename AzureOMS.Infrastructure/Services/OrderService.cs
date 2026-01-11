@@ -3,11 +3,6 @@ using AzureOMS.Domain.Entities;
 using AzureOMS.Domain.Enums;
 using AzureOMS.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AzureOMS.Infrastructure.Services;
 
@@ -36,10 +31,31 @@ public class OrderService : IOrderService
         return order;
     }
 
-    public async Task<IEnumerable<Order>> GetOrderAsync(Guid userId)
+    public async Task<IEnumerable<Order>> GetOrdersAsync(Guid userId,int page,int pageSize,OrderStatus? status)
     {
-        return await _dbContext.Orders
-            .Where(o => o.UserId == userId)
-            .OrderByDescending(o => o.CreatedAt).ToListAsync();
+        var query = _dbContext.Orders
+            .Where(o => o.UserId == userId);
+
+        if (status.HasValue)
+        {
+            query = query.Where(o => o.Status == status);
+        }
+
+        return await query
+            .OrderByDescending(o => o.CreatedAt).Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+    }
+
+    public async Task UpdateOrderStatusAsync(Guid orderId, OrderStatus status)
+    {
+        var order = await _dbContext.Orders.FirstOrDefaultAsync(o => o.Id == orderId) ?? throw new Exception("Order not Found");
+
+        if (order.Status == OrderStatus.Cancelled)
+        {
+            throw new Exception("Cancelled Orders cannot be updated");
+        }
+
+        order.Status = status;
+        order.UpdatedAt = DateTime.UtcNow;
+        await _dbContext.SaveChangesAsync();
     }
 }

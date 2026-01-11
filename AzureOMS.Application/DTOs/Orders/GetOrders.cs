@@ -6,6 +6,4 @@ using System.Threading.Tasks;
 
 namespace AzureOMS.Application.DTOs.Orders;
 
-internal class GetOrders
-{
-}
+public record GetOrders();

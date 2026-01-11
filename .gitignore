@@ -2,19 +2,18 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-# .NET build output
-bin/
-obj/
+# Build output
+**/bin/
+**/obj/
 
 # Visual Studio
 .vs/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
 
-# App settings (secrets)
+# App settings
 appsettings.json
+appsettings.*.json
 
 # Logs
 *.log
@@ -22,3 +21,4 @@ appsettings.json
 # OS files
 .DS_Store
 Thumbs.db
+

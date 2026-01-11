@@ -19,7 +19,6 @@ public class OrdersController : ControllerBase
         _orderService = orderService;
     }
 
-    // 📌 GET: api/orders
     [HttpGet("GetOrders")]
     public async Task<IActionResult> GetOrders(
     int page = 1,
@@ -33,7 +32,6 @@ public class OrdersController : ControllerBase
         return Ok(orders);
     }
 
-    // 📌 POST: api/orders
     [HttpPost("CreateOrder")]
     public async Task<IActionResult> CreateOrder(CreateOrderRequest request)
     {
@@ -42,7 +40,6 @@ public class OrdersController : ControllerBase
         return Ok(order);
     }
 
-    // 🔑 Extract logged-in user id from JWT
     private Guid GetUserId()
     {
         var userIdClaim =   
